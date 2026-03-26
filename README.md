@@ -4,14 +4,21 @@
 ---
 
 ## Table of Contents
-1. [Project Overview](#-project-overview)
-2. [Server Installation (DC)](#-server-installation-dc)
-3. [Windows 10 Client Installation](#-windows-10-client-installation)
-4. [Active Directory Configuration](#-active-directory-configuration)
-5. [The "Delegation" Error & DNS Fix](#-the-delegation-error--dns-fix)
-6. [Conclusion](#-conclusion)
+1. [Prerequisites](#-prerequisites)
+2. [Project Overview](#-project-overview)
+3. [Installing Oracle VirtualBox](#installing-oracle-virtualbox)
+4. [Server Installation (DC)](#-server-installation-dc)
+5. [Windows 10 Client Installation](#-windows-10-client-installation)
+6. [Active Directory Configuration](#-active-directory-configuration)
+7. [Troubleshooting](#troubleshooting)
+8. [Conclusion](#-conclusion)
 
 ---
+
+## Prerequisites
+[Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+[Windows Server 2022 EVAL ISO](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022)
+[Windows 10 EVAL ISO](https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise)
 
 ## Project Overview
 This lab demonstrates how to set up a functional Active Directory environment from scratch. I focused on server promotion, user management with "Least Privilege" principles, and troubleshooting DNS connectivity between virtualized machines.
