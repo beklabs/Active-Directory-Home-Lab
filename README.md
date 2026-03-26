@@ -5,13 +5,13 @@
 
 ## Table of Contents
 1. [Prerequisites](#-prerequisites)
-2. [Project Overview](#-project-overview)
+2. [Project Overview](#project-overview)
 3. [Installing Oracle VirtualBox](#installing-oracle-virtualbox)
-4. [Server Installation (DC)](#-server-installation-dc)
-5. [Windows 10 Client Installation](#-windows-10-client-installation)
-6. [Active Directory Configuration](#-active-directory-configuration)
+4. [Server Installation (DC)](#server-installation-dc)
+5. [Windows 10 Client Installation](#windows-10-client-installation)
+6. [Active Directory Configuration](#active-directory-configuration)
 7. [Troubleshooting](#troubleshooting)
-8. [Conclusion](#-conclusion)
+8. [Conclusion](#conclusion)
 
 ---
 
