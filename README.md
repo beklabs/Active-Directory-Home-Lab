@@ -29,7 +29,8 @@ Before starting this lab, you will need to download and install the following so
 
 ---
 
-
+## Installing Oracle VirtualBox and VirtualBox Extension Pack
+1. 
 
 <img width="838" height="575" alt="image" src="https://github.com/user-attachments/assets/c6e9fde3-4bb8-4831-92cc-721de9d2000f" />
 
