@@ -73,6 +73,8 @@ Before starting this lab, you will need to download and install the following so
 
 Now Oracle VirtualBox and the VirtualBox Extension Pack are both installed successfully.
 
+[↑ Back to Table of Contents](#table-of-contents)
+
 ---
 
 ## Server Installation (DC)
@@ -91,6 +93,22 @@ Now Oracle VirtualBox and the VirtualBox Extension Pack are both installed succe
 4. Clicked on the `Specify virtual hard disk` drop down, selected `Create a New Virtual Hard Disk`, allocated 50 GB of storage for the VM, and clicked `Finished`
 
 <img width="1065" height="562" alt="image" src="https://github.com/user-attachments/assets/ffaa0011-a7c7-4d3b-a1dc-3117ecf8a3c3" />
+
+5. Once the VM was created, I right-clicked on it and selected `Settings`
+
+<img width="870" height="806" alt="image" src="https://github.com/user-attachments/assets/22ccd1f9-fe2a-4894-9080-d80a4347c56d" />
+
+6. Clicked on `System`, and where it says `Boot Device Order (BIOS only)`, I unchecked `Floppy` and made sure that `Optical` was before `Hard Disk`
+
+<img width="785" height="521" alt="image" src="https://github.com/user-attachments/assets/57aac422-37ca-4e5e-bcfb-5460245f6c7b" />
+
+7. Clicked on `Network`, changed the `Attached to` to `Bridged Adapter`, made sure the `Name` displayed my correct internet connection, and clicked `OK`
+
+<img width="786" height="518" alt="image" src="https://github.com/user-attachments/assets/b5b65dff-d533-4c20-a7e2-53adcf9a2a2c" />
+
+8. 
+
+
 
 
 
