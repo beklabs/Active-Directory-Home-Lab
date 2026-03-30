@@ -28,7 +28,7 @@ Before starting this lab, you will need to download and install the following so
 
 ---
 
-## Installing Oracle VirtualBox and VirtualBox Extension Pack
+## Installing Oracle VirtualBox and VirtualBox Extension Pack [↑ Back to Table of Contents](#table-of-contents)
 
 1. From https://www.virtualbox.org/wiki/Downloads, I downloaded the `Windows hosts` VirtualBox version and opened the .exe file to begin installation
 2. Clicked `Next`
@@ -73,11 +73,9 @@ Before starting this lab, you will need to download and install the following so
 
 Now Oracle VirtualBox and the VirtualBox Extension Pack are both installed successfully.
 
-[↑ Back to Table of Contents](#table-of-contents)
-
 ---
 
-## Server Installation (DC)
+## Server Installation (DC) [↑ Back to Table of Contents](#table-of-contents)
 1. Opened up Oracle VirtualBox and selected `New` from the home menu
 
 <img width="870" height="805" alt="image" src="https://github.com/user-attachments/assets/f1d4e683-eebc-4093-a33d-79842ac36142" />
