@@ -91,7 +91,7 @@ Now Oracle VirtualBox and the VirtualBox Extension Pack are both installed succe
 
 <img width="1063" height="561" alt="image" src="https://github.com/user-attachments/assets/48921268-38d4-4eaa-8495-7e74a8635d8a" />
 
-4. Clicked on the `Specify virtual hard disk` drop down, selected `Create a New Virtual Hard Disk`, allocated 50 GB of storage for the VM, and clicked `Finished`
+4. Clicked on the `Specify virtual hard disk` drop down, selected `Create a New Virtual Hard Disk`, allocated 50 GB of storage for the VM, and clicked `Finish`
 
 <img width="1065" height="562" alt="image" src="https://github.com/user-attachments/assets/ffaa0011-a7c7-4d3b-a1dc-3117ecf8a3c3" />
 
@@ -163,39 +163,93 @@ DC Server installation is now complete!
 
 ---
 
-##Windows 10 Client Installation
+## Windows 10 Client Installation
 
 1. Opened up Oracle VirtualBox and selected `New` from the home menu
 
+<img width="870" height="805" alt="image" src="https://github.com/user-attachments/assets/16a8f2a1-b2aa-4ab5-b8b0-8320a991f604" />
+
+2. Named the VM `helpdesk`, selected the correct Windows 10 EVAL iso, and unchekced `Proceed with Unattended Installation`
+>**I did this because I will be setting it up manually**
+
+<img width="1068" height="562" alt="image" src="https://github.com/user-attachments/assets/e6bc4758-88a2-453e-be22-d8b2943aba6f" />
+
+3. Clicked on the `Specify virtual hardware` and kept the `Base Memory` at 2048 MB (2 GB) and the `Number of CPUs` at 1
+
+<img width="1067" height="562" alt="image" src="https://github.com/user-attachments/assets/f7ed6a3c-8dba-40a7-8d4b-b9a33e54bdd7" />
+
+4. Clicked on the `Specify virtual hard disk` drop down, selected `Create a New Virtual Hard Disk`, allocated 20 GB of storage for the VM, and clicked `Finish`
+
+<img width="1065" height="560" alt="image" src="https://github.com/user-attachments/assets/a68610a3-f2ec-4add-a8c9-2581ff898f4b" />
+
+5. Once the VM was created, I right-clicked on it and selected `Settings`
+
+<img width="871" height="775" alt="image" src="https://github.com/user-attachments/assets/1e17424c-0727-4c31-a064-331804e270dd" />
+
+6. Clicked on `System`, and where it says `Boot Device Order (BIOS only)`, I unchecked `Floppy` and made sure that `Optical` was before `Hard Disk`
+
+<img width="785" height="521" alt="image" src="https://github.com/user-attachments/assets/57aac422-37ca-4e5e-bcfb-5460245f6c7b" />
+
+7. Clicked on `Network`, changed the `Attached to` to `Bridged Adapter`, made sure the `Name` displayed my correct internet connection, and clicked `OK`
+
+<img width="786" height="518" alt="image" src="https://github.com/user-attachments/assets/53e4b001-b1e4-4a6f-b551-dc4c63dc998b" />
+
+8. Double-clicked on `helpdesk` VM, kept the language, time and currency format, keyboard or input method as the defaults, and clicked `Next`
+
+<img width="622" height="461" alt="image" src="https://github.com/user-attachments/assets/6eb8ab50-6181-41d3-8940-7a7ae7f5ac80" />
+
+9. Clicked on `Install now`
+
+<img width="623" height="462" alt="image" src="https://github.com/user-attachments/assets/6a5a8212-4725-4d51-981b-a61b84026e4d" />
+
+10. Accepted the terms and clicked `Next`
+
+<img width="644" height="487" alt="image" src="https://github.com/user-attachments/assets/cbd62cc8-6366-4405-98d9-4f22014fac15" />
+
+11. It asked me what type of install I want to perform - I chose `Custom: Install Windows only (advanced)`
+> **I chose this because I am doing a completely new, fresh install**
+
+<img width="644" height="483" alt="image" src="https://github.com/user-attachments/assets/a3073c63-4aa6-4b4d-a03b-c8331c683e1a" />
+
+12. Gave me the option to allocate disk space, since I'm only using one drive I just clicked `Next`
+
+<img width="643" height="484" alt="image" src="https://github.com/user-attachments/assets/9515c285-e9df-4dd1-ac8f-fcb69209d85f" />
+
+13. Selected `United States` as my region, selected `Yes`, selected `US` as my keyboard layout, selected `Yes`, and selected `Skip` on adding a second keyboard layout
+
+<img width="1024" height="771" alt="image" src="https://github.com/user-attachments/assets/1b7a4cf8-97d0-41cd-a243-b5c5e62fb5c4" /><img width="1021" height="771" alt="image" src="https://github.com/user-attachments/assets/d3acbddf-ea42-44f2-93d3-743192bac60f" /><img width="1023" height="766" alt="image" src="https://github.com/user-attachments/assets/8aaf4d94-ddac-457c-8094-8907a56f85dc" />
+
+14. Once it loaded the `Sign in with Microsoft` page, and I clicked on `Domain join instead`
+
+<img width="1019" height="795" alt="image" src="https://github.com/user-attachments/assets/817cb6ed-8742-4b65-8ffc-e13e5face675" />
+
+15. Created a local account called `admin` and followed the prompts to setup a password and create security questions/answers
+
+<img width="1020" height="794" alt="image" src="https://github.com/user-attachments/assets/eda23828-b350-41dd-9566-0784aa6826fe" />
+
+16. This is just my preference, but I toggle all privacy settings off and click `Accept`
+
+<img width="1026" height="798" alt="image" src="https://github.com/user-attachments/assets/9399b9b0-0e87-46e5-9d44-0c4c9b059dc4" />
+
+17. I clicked `Not now` on the Cortana assistant pop-up as I'm not planning on utilizing it in this homelab
+
+<img width="1019" height="795" alt="image" src="https://github.com/user-attachments/assets/1b529392-64e2-48ed-8fe7-ed9776418755" />
+
+18. Once it finished installing, I right-clicked on the Windows icon, selected `System`, clicked on `Rename this PC`, renamed it to `helpdesk`, clicked `Next`, and clicked `Restart now`
+
+<img width="1019" height="800" alt="image" src="https://github.com/user-attachments/assets/bf1d0178-eae4-4ead-a7a5-879ae2918d4f" /><img width="1021" height="806" alt="image" src="https://github.com/user-attachments/assets/9c61fd0d-9f1c-44a8-b8a3-023bcdb3dfa0" /><img width="1020" height="805" alt="image" src="https://github.com/user-attachments/assets/6b3c7b32-50c0-4a4a-a5fa-408bfc2a52fd" /><img width="684" height="220" alt="image" src="https://github.com/user-attachments/assets/6a5a612a-917d-41ec-ad1a-ceda3e92ae65" />
 
 
+19. Once the VM came back on, I clicked on `File`, Clicked `Close`, selected the option `Send the shutdown signal`, and clicked `OK`
 
+<img width="1031" height="807" alt="image" src="https://github.com/user-attachments/assets/02acf315-ffed-4811-b8c0-419706cf3b85" /><img width="1020" height="802" alt="image" src="https://github.com/user-attachments/assets/ccab27fb-6aaa-4b30-a1ec-307118c9b92e" />
 
+20. Right-clicked on the `helpdesk` VM, selected `Clone`, named the clone version to `Staff`, selected `Full Clone`, and then I clicked `Finish`
+>**This is so I can have an instance of it ready to go in case I need it in the future**
 
+<img width="869" height="778" alt="image" src="https://github.com/user-attachments/assets/32c3e1a8-2b8b-4ba5-8264-1d8c94489196" /><img width="624" height="412" alt="image" src="https://github.com/user-attachments/assets/312ae1d2-1194-462f-bcdf-1f3c8194b0c0" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
-## Windows 10 Client Installation
-* **Image:** Windows 10 Evaluation ISO.
-* **Setup:** Configured as a "helpdesk" machine. 
-* **Snapshots:** Created a **Full Clone** named `Staff` to act as a template for future users.
-* **Local Admin:** Created a local `admin` account first to handle the initial setup before joining the domain.
+Windows 10 VM has been successfully installed!
 
 ---
 
