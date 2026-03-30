@@ -9,7 +9,7 @@
 3. [Installing Oracle VirtualBox and VirtualBox Extension Pack](#installing-oracle-virtualbox-and-virtualbox-extension-pack)
 4. [Server Installation (DC)](#server-installation-dc)
 5. [Windows 10 Client Installation](#windows-10-client-installation)
-6. [Active Directory Configuration](#active-directory-configuration)
+6. [Installing Active Directory and adding Win10 VM to Active Directory](#installing-active-directory-and-adding-win10-vm-to-active-directory)
 7. [Troubleshooting](#troubleshooting)
 8. [Conclusion](#conclusion)
 
@@ -164,6 +164,7 @@ DC Server installation is now complete!
 ---
 
 ## Windows 10 Client Installation
+[↑ Back to Table of Contents](#table-of-contents)
 
 1. Opened up Oracle VirtualBox and selected `New` from the home menu
 
@@ -253,14 +254,37 @@ Windows 10 VM has been successfully installed!
 
 ---
 
-## Active Directory Configuration
-1. **Role Installation:** Added "Active Directory Domain Services" via Server Manager.
-2. **Forest Creation:** Promoted the server to a DC and created the `beklabs.org` forest with the NetBIOS name `BLABS`.
-3. **User Management:** Created a new user `helpdesk blabs` and manually assigned them to the **Domain Admins** group to grant administrative rights.
+## Installing Active Directory and adding Win10 VM to Active Directory
+[↑ Back to Table of Contents](#table-of-contents)
+
+1. Opened both `DC` and `helpdesk` VMs
+2. Within `DC`, clicked on `Server Manager`, clicked on the `Manage` tab, selected `Add Roles and Features`,and clicked `Next`
+3. Clciked `Role-based or feature-based installation` and clicked `Next`
+4. Clicked on the option `Active Directory and Domain Services` and clicked `Add Features`
+5. Clicked `Next`, clicked `Next` again, and then clicked `Install`
+6. Clicked on the option `Promote server to domain controller`, and selected `Add a new forest`
+7. Named the Root domain name `beklabs.org` and clicked `Next` Gave it a strong password and clicked `Next` then clicked `Next` again
+8. I made my NetBIOS name `BLABS`, clicked `Next`, clicked `Next` again, and then clicked `Next` again
+9. Clicked `Install` and then restarted the VM
+10. Waited for the Server Manager to populate and then clicked on `Tools` and then selected `Active Directory Users and Computers`
+11. Right-clicked on the `Users` folder, hovered over `New` and then selected `User`, and created a new user named `helpdesk blabs`
+>**Make sure to uncheck `User must change password at next logon`**
+12. Right-clicked on the new user `helpdesk blabs` and selected `Properties`, clicked `Member Of` and added the group `domain admins` to `helpdesk blabs`
+>**This makes this account an admin account**
+13. Went back to the helpdesk machine, opened Windows Start, typed `advanced` and clicked on the option `View advanced system settings`
+14. Clicked on `Computer Name`, selected `Change`, selected the option `Domain`, and typed in `beklabs.org`
+Note: If you see "An AD DC for the domain could not be contacted," this is a common DNS mismatch between VMs.
+
+[!CAUTION]: Manually set the Helpdesk VM's Preferred DNS to the static IPv4 address of the DC and disable IPv6. (See [Troubleshooting](#troubleshooting) for full details).
+
+15. Entered the credentials for helpdesk blabs and successfully joined the beklabs.org domain.
+
+
+
 
 ---
 
-## The "Delegation" Error & DNS Fix
+## Troubleshooting
 When trying to join the helpdesk machine to the domain, I encountered a "DC could not be contacted" error referencing DNS delegation.
 
 **My Troubleshooting Steps:**
