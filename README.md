@@ -107,7 +107,59 @@ Now Oracle VirtualBox and the VirtualBox Extension Pack are both installed succe
 
 <img width="786" height="518" alt="image" src="https://github.com/user-attachments/assets/b5b65dff-d533-4c20-a7e2-53adcf9a2a2c" />
 
-8. 
+8. Double-clicked on `DC`, kept the language, time and currency format, keyboard or input method as the defaults, and clicked `Next`
+
+<img width="623" height="463" alt="image" src="https://github.com/user-attachments/assets/dd79e667-befa-4603-96e9-06ef590762f9" />
+
+9. Clicked `Install Now`
+
+<img width="626" height="461" alt="image" src="https://github.com/user-attachments/assets/6c9c470b-a733-4483-95ca-ad7255715c51" />
+
+10. Selected the `Windows Server 2022 Datacenter Evaluation (Desktop Experience)`, and then clicked `Next`
+> **This is so I could have a full GUI rather than just the command line** 
+
+<img width="645" height="484" alt="image" src="https://github.com/user-attachments/assets/c3995141-c066-4fcc-a25e-ed19283861ad" />
+
+11. Accepted the terms and clicked `Next`
+
+<img width="642" height="483" alt="image" src="https://github.com/user-attachments/assets/6807149c-f956-441f-b438-2c4e9b0b19ac" />
+
+12. It asked me what type of install I want to perform - I chose `Custom: Install Microsoft Server Operating System only (advanced)`
+> **I chose this because I am doing a completely new, fresh install**
+
+<img width="643" height="481" alt="image" src="https://github.com/user-attachments/assets/adfb3c59-878f-48b8-9d06-5693ddc324dc" />
+
+13. Gave me the option to allocate disk space, since I'm only using one drive I just clicked `Next`
+
+<img width="643" height="483" alt="image" src="https://github.com/user-attachments/assets/8c6a8aa1-74a4-494f-8bbc-3c063fc924d8" />
+
+14. Once it finished installing, I put in a password for the local admin account and clicked `Finish`
+
+<img width="1020" height="767" alt="image" src="https://github.com/user-attachments/assets/46ca69d0-c94d-4ded-b717-74d1bfcfc602" />
+
+15. At the sign-in page for the computer, I clicked on `Input`, hovered over `Keyboard`, and then clicked on `Insert Ctrl+Alt+Del`
+
+<img width="1024" height="803" alt="image" src="https://github.com/user-attachments/assets/4aafbdd4-77dc-48ef-bc89-a93d60c1e878" />
+
+16. Logged into the admin account using the password I just created and waited to load into the VM
+17. A pop-up came up asking if I wanted to allow my PC to be discoverable by other PCs and devices on this network. I clicked `Yes`
+
+<img width="346" height="435" alt="image" src="https://github.com/user-attachments/assets/37da542d-fe05-4795-b837-7be0001d8726" />
+
+18. Right-clicked on the Windows Start and selected `System` then selected `Rename this PC`, renamed it to `DC`, clicked `Next`, and then clicked `Restart now`
+
+<img width="1022" height="773" alt="image" src="https://github.com/user-attachments/assets/4ced8cf0-a821-4c91-acf3-5950c754bd0a" /><img width="1022" height="769" alt="image" src="https://github.com/user-attachments/assets/81150ac6-644c-4572-970a-68ee163fdd31" /><img width="687" height="308" alt="image" src="https://github.com/user-attachments/assets/458722f1-5c1c-4af6-8e65-17ccdad02ee7" /><img width="689" height="220" alt="image" src="https://github.com/user-attachments/assets/05a0293c-5902-416f-8a06-d2054cc48ead" />
+
+
+
+
+
+
+
+
+
+
+
 
 
 
