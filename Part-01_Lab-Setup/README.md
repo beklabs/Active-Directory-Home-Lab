@@ -1,5 +1,6 @@
 ## Installing Oracle VirtualBox and VirtualBox Extension Pack
-[↑ Back to Table of Contents](#table-of-contents)
+
+
 
 1. From https://www.virtualbox.org/wiki/Downloads, I downloaded the `Windows hosts` VirtualBox version and opened the .exe file to begin installation
 2. Clicked `Next`
@@ -47,7 +48,7 @@ Now Oracle VirtualBox and the VirtualBox Extension Pack are both installed succe
 ---
 
 ## Server Installation (DC)
-[↑ Back to Table of Contents](#table-of-contents)
+
 
 1. Opened up Oracle VirtualBox and selected `New` from the home menu
 
@@ -134,7 +135,7 @@ DC Server installation is now complete!
 ---
 
 ## Windows 10 Client Installation
-[↑ Back to Table of Contents](#table-of-contents)
+
 
 1. Opened up Oracle VirtualBox and selected `New` from the home menu
 
@@ -209,7 +210,6 @@ DC Server installation is now complete!
 18. Once it finished installing, I right-clicked on the Windows icon, selected `System`, clicked on `Rename this PC`, renamed it to `helpdesk`, clicked `Next`, and clicked `Restart now`
 
 <img width="1019" height="800" alt="image" src="https://github.com/user-attachments/assets/bf1d0178-eae4-4ead-a7a5-879ae2918d4f" /><img width="1021" height="806" alt="image" src="https://github.com/user-attachments/assets/9c61fd0d-9f1c-44a8-b8a3-023bcdb3dfa0" /><img width="1020" height="805" alt="image" src="https://github.com/user-attachments/assets/6b3c7b32-50c0-4a4a-a5fa-408bfc2a52fd" /><img width="684" height="220" alt="image" src="https://github.com/user-attachments/assets/6a5a612a-917d-41ec-ad1a-ceda3e92ae65" />
-
 
 19. Once the VM came back on, I clicked on `File`, Clicked `Close`, selected the option `Send the shutdown signal`, and clicked `OK`
 
